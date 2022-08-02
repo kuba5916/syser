@@ -1,0 +1,107 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    /*color:RGB(249, 236, 0);*/ 
+}
+
+@font-face {
+    font-family: digital-readout;
+    src: url(../fonts/digital-readout/TrueType/SFDigitalReadout-Medium.ttf);
+}
+
+@font-face {
+    font-family: saddlebag-black;
+    src: url(../fonts/saddlebag-black/SaddlebagBlack.ttf);
+}
+
+html, #global_container.jumbotron {
+    background: rgba(152, 152, 152, 1);
+}
+
+div#global_container {
+    margin:0;
+}
+
+li {
+    list-style: none;
+}
+
+h2 {
+    text-align:center;
+}
+
+h4 { 
+    font-size: 2em; 
+    text-align: center; 
+}
+
+h5 { 
+    font-size: 1em;
+	font-weight: 600;
+}
+
+.fit { /* set relative picture size */
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.center {
+    display: block;
+    margin: auto;
+}
+
+h1#time:hover + div#buttonContainer, #buttonContainer > button:hover  {
+    visibility: visible;
+}
+
+#tytul-strony {
+    color: #ffff00;
+}
+
+.col-sm-12.col-md-4 {
+    margin: 30px 0;
+}
+
+label {
+    margin-top: 15px;
+}
+
+hr {
+	margin-top: 0;
+}
+
+select, input {
+	padding: 4px;
+}
+
+td {
+	padding: 5px 0;
+}
+/********** help *******/
+.help-icon-grey {
+    #background: url(../images/help-button-grey.svg) center;
+	color: grey;
+}
+
+.help-icon-red {
+    #background: url(../images/help-button-red.svg) center;
+	color:red;
+}
+
+.help-icon-dark-grey {
+    background: url(../images/help-button-dark-grey.svg) center;
+}
+
+.attention-icon-grey {
+	background: url(../images/attention-icon-grey.svg) center;
+}
+
+.attention-icon-red {
+	background: url(../images/attention-icon-red.svg) center;
+}
+
+/*********** czas **********/
+#time{
+	font-family:digital-readout;
+}

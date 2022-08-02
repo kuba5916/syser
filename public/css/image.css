@@ -1,0 +1,22 @@
+.image-small {
+	width: 5em;
+}
+
+.image-container {
+    float: left;
+    padding: 0.5em;
+    text-align: center;
+    border: 2px dashed #ddd;
+    margin: 0.5em;
+	cursor: pointer;
+	min-height:7em;
+}
+
+.image-container p {
+	margin: 0.5em 0.5em 0;
+}
+
+.selected-image {
+    border-color: green;
+	border-style: solid;
+}

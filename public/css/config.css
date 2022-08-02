@@ -1,0 +1,191 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017-01-09, 21:03:12
+    Author     : Szymon
+*/
+
+.row, ol, ul {
+    margin: 0;
+}
+
+body {
+    background-color: rgba(152, 152, 152, 1);
+    /*overflow-y: scroll;*/
+}
+
+/* logo */
+.header {
+    padding: 20px 0;
+}
+
+#logo {
+    width: 200px;
+}
+
+/* inne */
+
+#tytul-strony {
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+#room_container, #admin_container {
+    padding: 5px;
+}
+
+.background-div {
+    background: #b3b3b3;
+}
+
+/* naglowki */
+h2.naglowek_h {
+    color: #ccc;
+    background: #4d4d4d;
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 0;
+	text-align: center;
+}
+
+/********************* pokój gry ****************/
+#zegar, #message {
+    /*    background-color: #000;
+        color: #ffff00;*/
+}
+
+/* -------------------pokój administracyjny ----------- */
+.uruchamianie-gry div.col-xs-4 {
+    text-align: center;
+}
+
+.tab_content button {
+    color: #fff;
+    background: #8f8f8f;
+    width: 120px;
+    padding: 5px 0;
+    border-radius: 10px 10px 0 0;
+    border: 2px solid rgba(77, 77, 77, 0.26);
+    border-bottom: none;
+}
+
+.tab_content button.active {
+    background: #4d4d4d;
+    position: relative;
+    top: 2px;
+    padding-top: 7px;
+}
+
+button, textarea, input {
+    outline: none;
+}
+
+div#tabs {
+    margin: 10px;
+}
+
+.tabcontent {
+    display: none;
+    border: 2px solid #4d4d4d;
+    padding: 10px;
+    /*min-height: 300px;*/
+}
+
+/* configuration button */
+#config-icon, #home-icon, #admin-icon, #logout-icon {
+    width: 20%;
+    cursor: pointer;
+    float: right
+}
+
+.rubbish-icon {
+    width: 1.5em;
+    cursor: pointer;
+    float: right;
+}
+
+.rubbish-icon:hover {
+    background-color: #b3b3b3;
+}
+
+#home-icon, #logout-icon {
+    margin-right: 1em;
+}
+
+/* lista */
+ul#texts, ul#images, ul#sounds, ul#predefinedSoundsMessages, ul#movies {
+    background-color: #ccc;
+    list-style: none;
+    padding: 1px;
+}
+
+ul#texts li, ul#images li, ul#sounds li, ul#predefinedSoundsMessages li, ul#movies li{
+    padding: 5px;
+    margin: 10px;
+    background-color: #e6e6e6;
+    cursor: default;
+}
+
+#predefinedSounds {
+    margin-top: 20px;
+}
+
+/*form*/
+textarea {
+    border: none;
+    background-color: #ccc;
+    padding: 0.5em;
+    width:100%;
+    max-width: 100%;
+    min-height: 100px;
+}
+
+input#textsInput, button#edytujButton, input#soundsInput, button#savePredefinedSound, button#zapiszEdycja, input#saveGameRoomPersonalizations, input#emailInput, input#movieFileUpload, input#basicInformationsInput, button#backgroundImageUpload, input#imagesInput {
+    padding: 2px 5px;
+    width: 100px;
+	margin-bottom: 20px;
+}
+
+input#emailInput {
+    margin-top: 20px;
+}
+
+button#savePredefinedSound {
+    margin: 10px 0 20px;
+}
+
+button#edytujButton {
+    float: none;
+}
+
+/************* time ***********/
+
+div#gameTimeBlock {
+    display: inline;
+}
+
+@media screen and (max-width: 920px) {
+    #admin-icon, #home-icon, #logout-icon {
+		width: 8%;
+	}
+}
+
+/********* tabs ******/
+.tabs-icon {
+	width:40px;
+	padding-right: 10px;
+}
+
+
+/********* stats ***********/
+table#statistics {
+    width: 100%;
+}
+table#statistics th, table#statistics td {
+    text-align: center;
+    padding: 5px 10px;
+    border: 1px solid;
+}

@@ -1,0 +1,67 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2016-10-03, 21:35:29
+    Author     : Szymon
+*/
+* {
+    cursor: default;
+    color:RGB(249, 236, 0);
+}
+
+div.roomPerspective div#time{ 
+    font-size: 25vw;
+    text-align: center; 
+}
+
+div.roomPerspective div#message {
+    font-size: 10vh;
+}
+
+div#message ul#messages li{
+font-size: 1em;
+    text-align: center;
+}
+
+div.roomPerspective.messageSended div#time {
+/*    font-size: 10vw;*/
+}
+
+.jumbotron.vertical-center{
+    padding:0;
+}
+
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+}
+
+html, #global_container.jumbotron {
+    background-color: #000;
+}
+
+/********** help *******/
+#help{
+	position: fixed;
+    left: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    background-size: 50px;
+    border: 1px solid;
+    padding: 2px 10px;
+    font-size: 1.5em;
+	background-color: #222;
+}
+
+/************ full screen ***********/
+video, img { 
+	position: fixed; right: 0; bottom: 0;
+	min-width: 100%; min-height: 100%;
+	width: auto; height: auto; z-index: 1000;
+	background-size: cover; 
+}

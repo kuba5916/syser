@@ -1,0 +1,352 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2016-10-01, 21:37:40
+    Author     : Szymon
+*/
+
+body {
+    background-color: rgba(152, 152, 152, 1);
+    /*overflow-y: scroll;*/
+}
+
+.row, ol, ul {
+    margin: 0;
+}
+
+li {
+    cursor: default;
+}
+
+/*ul#messages li {
+    cursor: not-allowed;
+}*/
+
+h1#time {
+    text-align: center; 
+    margin: 10px;
+    font-size: 3em;
+}
+
+div#global_container.jumbotron.vertical-center.adminPerspective {
+    display: block;
+}
+
+.adminPerspective ul#messages li {
+    margin: 1em;
+	padding: 5px;
+    font-size: 1.5em;
+    text-align: center;
+	border: 2px dashed #dddddd;
+}
+
+form * {
+    outline-color: RGB(249, 236, 0);
+}
+
+h1, h4 {
+    cursor: default;
+}
+
+/* logo */
+.header {
+    text-align: left;
+    padding: 20px 0;
+}
+
+#logo {
+    width: 200px;
+}
+
+#room_container, #admin_container {
+    padding: 5px;
+}
+
+.background-div {
+    background: #b3b3b3;
+	min-height: 130px;
+}
+
+#tytul-strony {
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+/* naglowki */
+.section-header {
+    color: #ccc;
+    background: #4d4d4d;
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 0;
+	text-align: center;
+}
+
+/**************** images ***********/
+ul#images{
+	display: table;
+}
+
+/******************footer**********************/
+.row.footer {
+    margin: 15px 0;
+}
+
+.row.footer img {
+    width: 20px;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+a {
+    color: #333;
+}
+
+a:hover {
+    color: #000;
+}
+
+/********************* podgląd pokoju ***************88*/
+#zegar, #message {
+    /*    background-color: #000;
+        color: #ffff00;*/
+}
+
+/* -------------------zarządzanie pokojem----------- */
+/*.tab_content {
+    margin-top: 20px;
+}*/
+
+.uruchamianie-gry div.col-xs-4 {
+    text-align: center;
+}
+
+.tab_content button {
+    color: #fff;
+    background: #8f8f8f;
+    width: 120px;
+    padding: 5px 0;
+    border-radius: 10px 10px 0 0;
+    border: 2px solid rgba(77, 77, 77, 0.26);
+    border-bottom: none;
+}
+
+.tab_content button.active {
+    background: #4d4d4d;
+    position: relative;
+    top: 2px;
+    padding-top: 7px;
+}
+
+button, textarea, input {
+    outline: none;
+}
+
+div#tabs {
+    margin: 10px;
+}
+
+/********** tabs *************/
+.tabs-icon {
+	width:40px;
+	padding-right: 10px;
+}
+
+.import-icon {
+    width: 1.5em;
+    float: right;
+}
+
+.import-icon:hover {
+	cursor:pointer;
+}
+/*****************************/
+
+.tabcontent {
+    display: none;
+    border: 2px solid #4d4d4d;
+    padding: 10px;
+    /*min-height: 300px;*/
+}
+
+/* form */
+textarea {
+    border: none;
+    background-color: #ccc;
+    padding: 0.5em;
+    width:100%;
+    max-width: 100%;
+    min-height: 100px;
+}
+
+button.submit {
+    padding: 2px 5px;
+    width: 100px;
+}
+
+button.tinyButton{
+    float: none;
+    color: #fff;
+    width: 70px;
+}
+
+button.greenButton {
+    background: #008000;
+}
+
+button.greenButton:hover {
+    background: rgb(0, 128, 82);
+}
+
+button.redButton {
+    background: #d40000;
+}
+
+button.redButton:hover {
+    background: #f44336;
+}
+
+div#textMessageDiv {
+    margin-bottom: 10px;
+}
+
+/*********** czas ***********/
+a:focus, a:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#liveTimeValue {
+	display: inline-block;
+}
+
+#addLiveTime img, #substractLiveTime img, #pauseLiveTime img, #resumeLiveTime img, #reloadLiveTime img, .soundButton img, .imageButton img, .movieButton img{
+    width: 1.5em;
+	cursor: pointer;
+	margin-left: 5px;
+}
+
+/* lista */
+ul#texts, ul#sounds, ul#movies {
+    background-color: #ccc;
+    list-style: none;
+    padding: 1px;
+}
+
+ul#texts li, ul#sounds li, ul#movies li {
+    padding: 5px;
+    margin: 10px;
+	border: 2px dashed #e6e6e6;
+}
+
+ul#texts li:hover, ul#sounds li:hover, ul#movies li:hover {
+	border-color: green;
+    border-style: solid;
+}
+
+.adminPerspective ul#messages li:hover {
+	border-color: #d80027;
+	border-style: solid;
+}
+
+/* przyciski */
+.mainButtons {
+    margin: 19px 0;
+    text-align: center;
+}
+
+#startTime, #stopTime, #resetTime {
+    border: none;
+    padding: 1px 10px;
+    color: #fff;
+    width: 120px;
+    margin-bottom: 5px;
+}
+
+#startTime {
+    background-color: #008000;
+}
+
+#stopTime {
+    background-color: #d40000;
+}
+
+/* text input editTime */
+input#editEdit {
+	width: 50px;
+}
+
+/* configuration button */
+#config-icon, #home-icon, #logout-icon {
+    width: 20%;
+    cursor: pointer;
+    float: right
+}
+
+#home-icon, #logout-icon {
+    margin-right: 1em;
+}
+
+.rubbish-icon {
+    width: 1.5em;
+    cursor: pointer;
+    float: right;
+	position: absolute;
+    right: 1.5em;
+    background-color: #ddd;
+    padding: 6px;
+}
+
+.rubbish-icon:hover {
+    padding: 3px;
+}
+
+/********** help *******/
+#help{
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	background-size:30px;
+    margin: 6px;
+    position: absolute;
+}
+
+#attention{
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	background-size:30px;
+    margin: 6px;
+    position: absolute;
+}
+
+div#numberOfHints {
+}
+
+/********* summmary **************/
+div#summary {
+    margin-top: 10px;
+}
+
+table.data-table td, table.data-table th {
+    padding: 5px;
+}
+
+@media screen and (max-width: 920px) {
+    #config-icon, #home-icon, #logout-icon {
+		width: 8%;
+	}
+}

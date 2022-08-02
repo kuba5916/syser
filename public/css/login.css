@@ -1,0 +1,78 @@
+.login *{
+    text-align: center; 
+}
+
+.login h1 {
+    margin-bottom: 20px;
+}
+
+.login select {
+    margin-right: 2em;
+}
+
+.login option {
+    padding: 10px;
+}
+
+.login input[type="submit"] {
+    border: 1px solid #eee;
+}
+
+.login select, .login option, .login input {
+    border: 1px solid #eee;
+    font-size: 15px;
+    text-align: left;
+    padding: 0 5px;
+}
+
+.jumbotron.vertical-center{
+    padding:0;
+}
+
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+}
+
+/* przycisk konfiguracyjny */
+#configuration-button {
+    float: right;
+}
+
+/*************/
+.icons {
+    margin-top: 2em;
+}
+
+.icons label {
+    color: #ffff00;
+}
+
+#logo {
+    width: 50%;
+}
+
+#room-icon , #admin-icon, #config-icon {
+    width: 55%;
+    padding-bottom: 1em;
+}
+
+#room-icon img, #admin-icon img, #config-icon img{
+    cursor: pointer;
+    width: 100%;
+    padding: 25px 0;
+}
+
+#room-icon:hover, #admin-icon:hover, #config-icon:hover {
+    background-color: #000;
+}
+
+#room-icon {
+    float: right;
+}
+
+#config-icon {
+    float: left;
+}
